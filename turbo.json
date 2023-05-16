@@ -10,7 +10,9 @@
       // note: output globs are relative to each package's `package.json`
       // (and not the monorepo root)
       "outputs": ["dist/**"],
-      "outputMode": "new-only"
+      "outputMode": "new-only",
+      // for repro
+      "cache": false
     },
     "test": {
       // A package's `test` script depends on that package's

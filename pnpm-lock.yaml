@@ -4,12 +4,6 @@ importers:
 
   .:
     devDependencies:
-      imagecapture-wasm:
-        specifier: workspace:*
-        version: link:packages/imagecapture-wasm
-      imagecapture-worker:
-        specifier: workspace:*
-        version: link:packages/imagecapture-worker
       syncpack:
         specifier: ^9.8.6
         version: 9.8.6
