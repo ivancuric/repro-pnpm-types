@@ -13,7 +13,7 @@
     "watch": "concurrently npm:watch:js npm:watch:types",
     "lint:types": "tsc --emitDeclarationOnly false --noEmit",
     "lint": "concurrently npm:lint:types",
-    "clean": "rimraf .turbo types dist public/resources/* *.tsbuildinfo"
+    "clean": "rimraf .turbo types dist public/* *.tsbuildinfo"
   },
   "files": [
     "dist",

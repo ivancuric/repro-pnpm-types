@@ -11,7 +11,7 @@
     "build": "concurrently npm:build:js npm:build:types",
     "lint:types": "tsc --emitDeclarationOnly false --noEmit",
     "lint": "concurrently npm:lint:types",
-    "clean": "rimraf .turbo types dist public/resources/* *.tsbuildinfo"
+    "clean": "rimraf .turbo types dist public/* *.tsbuildinfo"
   },
   "type": "module",
   "files": [
