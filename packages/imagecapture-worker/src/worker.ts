@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const loadWasmModule = async (key: string) => {
+const loadWasmModule = async () => {
   importScripts(new URL("fake", self.location.origin));
 
   /**

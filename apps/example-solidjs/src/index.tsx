@@ -1,3 +1,9 @@
 import { getWrappedWorker } from "imagecapture-main";
 
-console.log(getWrappedWorker);
+(async () => {
+  const wrappedWorker = getWrappedWorker();
+
+  const module = await wrappedWorker.loadWasmModule();
+
+  module.something();
+})();

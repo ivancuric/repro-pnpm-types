@@ -10,7 +10,5 @@ export const getWrappedWorker = () => {
 
   const wrappedWorker = wrap<RemoteObj>(worker);
 
-  wrappedWorker.loadWasmModule;
-
   return wrappedWorker;
 };
