@@ -1,0 +1,10 @@
+// we only use types here to prevent circular deps
+{
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": ["types"],
+  "exclude": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "refactor",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "syncpack": "^9.8.6",
+    "turbo": "^1.9.6"
+  },
+  "scripts": {
+    "lint": "pnpm turbo lint",
+    "build": "pnpm turbo build",
+    "clean": "pnpm turbo clean"
+  }
+}

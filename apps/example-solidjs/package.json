@@ -1,0 +1,40 @@
+{
+  "name": "example-solidjs",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "clean": "rimraf dist public .turbo types tsconfig.tsbuildinfo",
+    "dev": "vite",
+    "build:types": "tsc --build",
+    "build:vite": "vite build",
+    "build": "npm run build:vite",
+    "preview": "vite preview",
+    "lint:eslint": "eslint ./src --max-warnings 0 --fix",
+    "lint:typecheck": "tsc --emitDeclarationOnly false --noEmit",
+    "lint": "concurrently npm:lint:*"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@mb/utils": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-define-config": "^1.20.0",
+    "eslint-plugin-solid": "^0.12.1",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.6",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-mkcert": "^1.15.0",
+    "vite-plugin-solid": "^2.7.0",
+    "zx": "^7.2.2"
+  },
+  "dependencies": {
+    "imagecapture-main": "workspace:*",
+    "solid-js": "^1.7.5"
+  }
+}

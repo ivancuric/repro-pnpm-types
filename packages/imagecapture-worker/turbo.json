@@ -1,0 +1,10 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "pipeline": {
+    "watch": {
+      "dependsOn": ["imagecapture-wasm#build"]
+    },
+    "build:dev": {}
+  }
+}
